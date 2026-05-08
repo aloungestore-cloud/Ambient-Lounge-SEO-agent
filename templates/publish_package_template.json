@@ -1,0 +1,111 @@
+{
+  "_comment": "JSON-шаблон публикационного пакета для Bitrix/АСПРО. Заполнять для каждой статьи.",
+  "site": "ambientlounge.ru",
+  "cms": "Bitrix",
+  "template": "ASPRO",
+
+  "section": "blog",
+  "_section_options": ["blog", "projects"],
+
+  "status": "draft",
+  "_status_options": ["draft", "publish"],
+
+  "content": {
+    "title": "",
+    "h1": "",
+    "slug": "",
+    "preview_text": "",
+    "detail_text_html": ""
+  },
+
+  "seo": {
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "primary_keyword": "",
+    "secondary_keywords": [],
+    "lsi_phrases": []
+  },
+
+  "media": {
+    "main_image": {
+      "source_url": "",
+      "recommended_filename": "",
+      "alt": "",
+      "title": "",
+      "caption": ""
+    },
+    "additional_images": [
+      {
+        "source_url": "",
+        "recommended_filename": "",
+        "alt": "",
+        "title": "",
+        "caption": "",
+        "placement": "after_intro"
+      }
+    ]
+  },
+
+  "schema_markup": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "",
+      "description": "",
+      "author": {
+        "@type": "Organization",
+        "name": "Ambient Lounge"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ambient Lounge",
+        "url": "https://ambientlounge.ru"
+      },
+      "datePublished": "",
+      "dateModified": "",
+      "mainEntityOfPage": ""
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": []
+    }
+  },
+
+  "internal_links": [
+    {
+      "anchor": "",
+      "url": "",
+      "placement": ""
+    }
+  ],
+
+  "related_products_or_categories": [],
+
+  "audience": {
+    "target_segment": "",
+    "search_intent": "",
+    "_intent_options": ["informational", "commercial", "navigational", "transactional"]
+  },
+
+  "aio": {
+    "short_answer": "",
+    "faq": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+
+  "audit": {
+    "published_date": "",
+    "next_audit_date": "",
+    "benchmarks": {
+      "min_ctr_percent": 2,
+      "max_avg_position": 30,
+      "min_time_on_page_sec": 60
+    }
+  }
+}
