@@ -1,0 +1,94 @@
+{
+  "site": "ambientlounge.ru",
+  "cms": "Bitrix",
+  "template": "ASPRO",
+  "section": "blog",
+  "title": "Hi-Lux vs So-Lux: сравнение наполнителей бескаркасной мебели",
+  "h1": "Hi-Lux или So-Lux: чем отличаются наполнители для бескаркасной мебели и стоит ли доплачивать",
+  "slug": "hi-lux-vs-so-lux-napolnitel",
+  "preview_text": "Выбираете бескаркасную мебель и не знаете, какой наполнитель взять — So-Lux или Hi-Lux? Разбираем разницу по существу: усадка, посадка, долгосрочная стоимость и кому что подходит.",
+  "meta_title": "Hi-Lux vs So-Lux: сравнение наполнителей бескаркасной мебели",
+  "meta_description": "Сравниваем Hi-Lux и So-Lux для бескаркасной мебели: усадка, срок службы, ощущения, цена. Когда стоит доплатить за Hi-Lux — и когда So-Lux вполне достаточно.",
+  "meta_keywords": "наполнитель Hi-Lux So-Lux сравнение, наполнитель для бескаркасной мебели, So-Lux усадка, Hi-Lux нулевая усадка, какой наполнитель выбрать бескаркасная мебель",
+  "main_image": {
+    "source_url": "[ТРЕБУЕТ_ПОДТВЕРЖДЕНИЯ: фото из фотоархива]",
+    "recommended_filename": "hi-lux-vs-so-lux-napolnitel-ambient-lounge.jpg",
+    "alt": "Сравнение наполнителей Hi-Lux и So-Lux для бескаркасной мебели Ambient Lounge",
+    "title": "Hi-Lux vs So-Lux — чем отличаются наполнители",
+    "caption": "Слева — гранулы So-Lux (3–5 мм, овальные), справа — Hi-Lux (2–4 мм, круглые, плотнее)"
+  },
+  "additional_images": [
+    {
+      "source_url": "[ТРЕБУЕТ_ПОДТВЕРЖДЕНИЯ: фото из фотоархива]",
+      "recommended_filename": "funnelweb-dosypka-napolnitelya.jpg",
+      "alt": "Система Funnelweb™ для досыпки наполнителя в бескаркасное кресло",
+      "title": "Система досыпки Funnelweb",
+      "caption": "Запатентованная система Funnelweb™ — досыпка наполнителя без пыли и рассыпания",
+      "placement": "inside_article"
+    }
+  ],
+  "schema_markup": "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Hi-Lux или So-Lux: чем отличаются наполнители для бескаркасной мебели\",\"description\":\"Сравниваем Hi-Lux и So-Lux: усадка, срок службы, цена, ощущения\",\"author\":{\"@type\":\"Organization\",\"name\":\"Ambient Lounge\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Ambient Lounge\",\"url\":\"https://ambientlounge.ru\"},\"datePublished\":\"2026-06-09\",\"dateModified\":\"2026-06-09\",\"mainEntityOfPage\":\"https://ambientlounge.ru/blog/hi-lux-vs-so-lux-napolnitel/\"}",
+  "internal_links": [
+    {
+      "anchor": "наполнители So-Lux с системой Funnelweb",
+      "url": "/collections/funnelweb/",
+      "placement": "в разделе про So-Lux и в заключении"
+    },
+    {
+      "anchor": "как досыпать наполнитель самостоятельно",
+      "url": "/blog/kak-dosypat-napolnitel-beskarkasnaya-mebel/",
+      "placement": "в FAQ про досыпку"
+    },
+    {
+      "anchor": "каталог моделей с Hi-Lux",
+      "url": "/catalog/",
+      "placement": "в разделе про Hi-Lux и в заключении"
+    }
+  ],
+  "related_products_or_categories": [
+    "/collections/funnelweb/napolnitel-so-lux-dlya-mebeli-100l-shariki-1-2mm/",
+    "/collections/funnelweb/napolnitel-so-lux-dlya-mebeli-300l-shariki-1-2mm/",
+    "/collections/funnelweb/"
+  ],
+  "target_audience_segment": "Покупатели, выбирающие бескаркасную мебель; действующие владельцы, столкнувшиеся с усадкой",
+  "search_intent": "информационный с коммерческим мостиком",
+  "primary_keyword": "наполнитель Hi-Lux So-Lux сравнение",
+  "secondary_keywords": [
+    "наполнитель для бескаркасной мебели",
+    "So-Lux усадка",
+    "Hi-Lux нулевая усадка",
+    "какой наполнитель выбрать бескаркасная мебель",
+    "досыпка наполнителя кресло",
+    "бескаркасная мебель какой наполнитель лучше"
+  ],
+  "aio_summary": "Hi-Lux — плотный наполнитель с нулевой усадкой для ежедневного использования. So-Lux дешевле, даёт усадку ~20% в год, но легко досыпается через систему Funnelweb™. Для гостиной — Hi-Lux, для дачи — So-Lux.",
+  "faq": [
+    {
+      "question": "Что такое усадка наполнителя в бескаркасной мебели?",
+      "answer": "Усадка — постепенное уплотнение гранул EPS под весом тела. У So-Lux ~20% в год при ежедневном использовании. У Hi-Lux усадки нет."
+    },
+    {
+      "question": "Можно ли досыпать наполнитель самостоятельно?",
+      "answer": "Да. Через систему Funnelweb™ — мешок пристёгивается к молнии изделия, гранулы пересыпаются под действием гравитации за 5–10 минут."
+    },
+    {
+      "question": "Усадка So-Lux — это гарантийный случай?",
+      "answer": "Нет. Усадка наполнителя — естественный процесс, не покрываемый гарантией."
+    },
+    {
+      "question": "Чем Hi-Lux отличается от обычных гранул в дешёвых креслах-мешках?",
+      "answer": "Hi-Lux — специально разработанный материал с контролируемым размером зерна, не слёживается. Дешёвые гранулы быстро превращаются в плотный комок."
+    },
+    {
+      "question": "Сколько наполнителя нужно для досыпки?",
+      "answer": "Для среднего кресла — 50–100 л. Для большого дивана Mod5 — 150–300 л на всю конфигурацию."
+    },
+    {
+      "question": "Можно ли заменить So-Lux на Hi-Lux в уже купленном изделии?",
+      "answer": "Теоретически да — полностью высыпать старый и засыпать новый. Практически — трудоёмко. Проще сразу выбрать нужный при покупке."
+    }
+  ],
+  "status": "draft",
+  "created_date": "2026-06-09",
+  "next_audit_date": "2026-06-16"
+}
