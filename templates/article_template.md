@@ -54,6 +54,43 @@ LSI-фразы:         [3–7 фраз]
 
 ---
 
+### Блок моделей (если статья про конкретные модели)
+
+**ОБЯЗАТЕЛЬНО** использовать HTML-карточки. НЕ h3+p+тире. Пример одной карточки:
+
+```html
+<div style="margin:0 0 32px;border:1px solid #e8e3db;border-radius:8px;overflow:hidden;">
+  <div style="background:#2a4a3f;padding:14px 22px;">
+    <p style="margin:0;font-family:Arial,sans-serif;font-weight:700;font-size:1.05em;color:#fff;letter-spacing:.03em;">
+      [Модель] — [хук 3-7 слов]
+    </p>
+  </div>
+  <div style="display:flex;gap:0;flex-wrap:wrap;">
+    <div style="flex:1;min-width:240px;max-width:340px;">
+      <img src="[photo_url]" alt="[alt]" loading="lazy"
+           style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;">
+    </div>
+    <div style="flex:2;min-width:260px;padding:22px 26px;">
+      <p style="margin:0 0 1em;">[Описание модели 1-2 абзаца]</p>
+      <div style="background:#fbf9f5;border-radius:4px;padding:12px 14px;font-family:Arial,sans-serif;font-size:13px;line-height:1.45;">
+        <strong>Ткань на фото:</strong> ...<br>
+        <strong>Размер/Вместимость:</strong> ...<br>
+        <strong>Для кого:</strong> ...
+      </div>
+      <div style="text-align:center;margin:16px 0 0;">
+        <a href="[url]" style="display:inline-block;border:2px solid #2a2220;color:#2a2220;font-family:Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:10px 22px;border-radius:3px;text-decoration:none;">
+          [Модель] в каталоге
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+Палитра хедеров: `#2a4a3f` (зелёный), `#1d4571` (синий), `#7a3528` (винный), `#5a4a3a` (коричневый), `#4a2a3e` (бордо). Если фото нет — убрать колонку с img.
+
+---
+
 ### Сравнение / таблица
 
 [Таблица сравнения — обязательна. Варианты:]

@@ -13,8 +13,9 @@
 Прочитай файлы проекта в порядке:
 1. docs/project_config.md — URL сайта и статусы доступов
 2. ambientlounge_claude_seo_aeo_aio_content_factory_prompt.md — полный мастер-промпт
-3. docs/audit_log.md — что опубликовано, что ждёт аудита
-4. docs/content_calendar.md — текущая очередь тем
+3. docs/channel_specs.md — HTML-архитектура и шаблон карточки товара (§1.5 — ОБЯЗАТЕЛЬНО)
+4. docs/audit_log.md — что опубликовано, что ждёт аудита
+5. docs/content_calendar.md — текущая очередь тем
 
 Затем выполни полный рабочий цикл:
 1. Собери данные по сайту из предоставленных URL.
