@@ -1,0 +1,7 @@
+<!-- tests/fixtures/sitemap_sample.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ambientlounge.ru/blog/obzory-lezhakov-dlya-zhivotnyh/kak-vybrat-lezhak-dlya-mastifa/</loc></url>
+  <url><loc>https://ambientlounge.ru/blog/olefin-dlya-ulichnoy-mebeli/</loc></url>
+  <url><loc>https://ambientlounge.ru/catalog/beskarkasnye-divany/</loc></url>
+</urlset>
