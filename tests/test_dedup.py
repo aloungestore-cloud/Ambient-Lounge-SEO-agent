@@ -32,3 +32,21 @@ def test_drops_seen_history():
 def test_keeps_fresh():
     out = dedup_topics([_t("svezhaya-unikalnaya-tema")], published=set(), seen_slugs=set())
     assert len(out) == 1
+
+
+def test_drops_covered_by_token_subset():
+    # "lezhak-mastifa" tokens {lezhak, mastifa} ⊆ tokens of "kak-vybrat-lezhak-dlya-mastifa"
+    out = dedup_topics(
+        [_t("lezhak-mastifa")],
+        published={"kak-vybrat-lezhak-dlya-mastifa"},
+        seen_slugs=set(),
+    )
+    assert out == []  # dropped: fully covered by existing article
+
+    # control: "lezhak-haski" — "haski" not in published slug tokens → KEPT
+    out2 = dedup_topics(
+        [_t("lezhak-haski")],
+        published={"kak-vybrat-lezhak-dlya-mastifa"},
+        seen_slugs=set(),
+    )
+    assert len(out2) == 1

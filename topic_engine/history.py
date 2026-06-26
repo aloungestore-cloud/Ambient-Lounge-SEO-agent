@@ -14,7 +14,12 @@ def load_seen_slugs(topics_dir: str) -> set[str]:
         try:
             with open(path, encoding="utf-8") as fh:
                 data = json.load(fh)
-            for t in data.get("topics", []):
+            topics = data.get("topics")
+            if not isinstance(topics, list):
+                continue
+            for t in topics:
+                if not isinstance(t, dict):
+                    continue
                 slug = (t.get("slug") or "").strip().lower()
                 if slug:
                     seen.add(slug)

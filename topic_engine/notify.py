@@ -18,7 +18,7 @@ def render_digest(queue_dict: dict, top_n: int = 10) -> str:
     for t in queue_dict.get("topics", [])[:top_n]:
         e = _EMOJI.get(t.get("intent", "unknown"), "•")
         flag = " ⚠️" if t.get("zero_result") else ""
-        lines.append(f"{t['rank']}. {e} [{t.get('intent')}] {t['phrase']} — {t['score']}{flag}")
+        lines.append(f"{t['rank']}. {e} [{t.get('intent', 'unknown')}] {t['phrase']} — {t['score']:.2f}{flag}")
         if t.get("zero_result"):
             zeros.append(t["phrase"])
     if zeros:
