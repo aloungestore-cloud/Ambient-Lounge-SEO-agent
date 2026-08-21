@@ -1,0 +1,72 @@
+{
+  "name": "al-tg-receive",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "al-tg-receive",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-receive",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Validate pack fields\nconst body = $input.first().json;\nif (!body.pack_id || !body.text || !body.url) {\n  return [{ json: { error: 'missing fields' }, statusCode: 400 }];\n}\n// Store pending\nconst staticData = $getWorkflowStaticData('global');\nif (!staticData.pending) staticData.pending = {};\nstaticData.pending[body.pack_id] = {\n  text: body.text,\n  url: body.url,\n  hashtags: body.hashtags || '',\n  preview_url: body.preview_url || '',\n  ts: new Date().toISOString()\n};\nreturn [{ json: body }];"
+      },
+      "id": "validate-store",
+      "name": "Validate & Store",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $env.TG_OWNER_CHAT_ID }}",
+        "text": "=📦 Новый пост готов к публикации\n\n{{ $json.text.substring(0, 300) }}...\n\npack_id: {{ $json.pack_id }}",
+        "replyMarkup": "inlineKeyboard",
+        "inlineKeyboard": {
+          "rows": [{
+            "row": {
+              "buttons": [
+                { "text": "✅ Опубликовать", "callbackData": "=pub:{{ $json.pack_id }}" },
+                { "text": "❌ Отклонить", "callbackData": "=rej:{{ $json.pack_id }}" }
+              ]
+            }
+          }]
+        },
+        "additionalFields": { "parse_mode": "HTML" }
+      },
+      "id": "send-preview",
+      "name": "Send Preview to Owner",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [750, 300]
+    },
+    {
+      "parameters": {
+        "options": { "responseBody": "{\"ok\":true}", "responseCode": 200 }
+      },
+      "id": "respond-ok",
+      "name": "Respond OK",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1000, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": { "main": [[{ "node": "Validate & Store", "type": "main", "index": 0 }]] },
+    "Validate & Store": { "main": [[{ "node": "Send Preview to Owner", "type": "main", "index": 0 }]] },
+    "Send Preview to Owner": { "main": [[{ "node": "Respond OK", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "staticData": null,
+  "tags": ["sp-b", "content-factory"],
+  "triggerCount": 0,
+  "updatedAt": "2026-06-27T00:00:00.000Z",
+  "versionId": "1"
+}
